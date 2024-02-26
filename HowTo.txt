@@ -1,0 +1,7 @@
+The code requires Python 3.7 and Tensorflow 1.13.1
+
+The order of files to be run is (e.g. for MNIST)
+
+1. Run train_diff_lip_classifiers.py (this trains three versions of the NN with different Lipschitz constraints).
+2. Run shap_mnist_lip.py (this calculates SHAP explanations on the three versions on the validation set)
+3. Run shap_classifier_astuteness_mnist_lip.py (this calculates astuteness for shap explainer on the three versions)
